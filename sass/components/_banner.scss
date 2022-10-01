@@ -1,0 +1,24 @@
+@import "./../utils/vars.scss";
+
+.container--banner {
+  width: 1600px;
+  height: 600px;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(".././images/banner-background.jpg");
+  background-size: cover;
+  background-position: 0 0, 0 -150px;
+  background-repeat: no-repeat;
+}
+
+.banner__title {
+  color: white;
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-left: 452px;
+  margin-right: 452px;
+  padding-bottom: 30px;
+  padding-top: 200px;
+}
