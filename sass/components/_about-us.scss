@@ -13,21 +13,18 @@
 
 .about-us__item {
   position: relative;
-
-  &:not(:last-child) {
-    padding-right: 30px;
-  }
+  width: calc(33% - 20px);
 }
 
 .about-us__image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .about-us__label {
   position: absolute;
-  width: 370px;
+  width: 100%;
   background-color: getColor("label-image");
   justify-content: center;
 
@@ -43,4 +40,10 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 769px) {
+  .about-us {
+    display: none;
+  }
 }

@@ -10,18 +10,6 @@
     url(".././images/banner-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
-  @media (min-width: 480px) {
-  }
-
-  @media (min-width: 768px) {
-    height: 600px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 1600px;
-    background-position: 0 0, 0 -150px;
-  }
 }
 .banner__content {
   display: flex;
@@ -37,8 +25,23 @@
   letter-spacing: 0.06em;
   text-align: center;
   padding-bottom: 30px;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 481px) {
+}
+
+@media (min-width: 769px) {
+  .banner__title {
     font-size: 44px;
+  }
+  .container--banner {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container--banner {
+    background-position: 0 0, 0 -150px;
+    max-width: 1600px;
   }
 }

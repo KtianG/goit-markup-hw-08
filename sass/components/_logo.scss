@@ -10,10 +10,6 @@
   &__Web {
     color: getColor("button-primary");
   }
-
-  @media (min-width: 769px) {
-    font-size: 26px;
-  }
 }
 
 .logo--header {
@@ -24,4 +20,10 @@
   padding-top: 60px;
   padding-bottom: 20px;
   color: white;
+}
+
+@media (min-width: 769px) {
+  .logo {
+    font-size: 26px;
+  }
 }
