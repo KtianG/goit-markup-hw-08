@@ -36,6 +36,12 @@ h2 {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 1201px) {
+  .container {
+    width: 1200px;
+  }
 }

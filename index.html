@@ -29,21 +29,19 @@
               ><span class="logo__Web">Web</span>Studio</a
             >
 
-            <nav>
-              <ul class="menu">
-                <li class="menu__item menu__item--active">
-                  <a href="./index.html" class="menu__link menu__link--active"
-                    >Agencja</a
-                  >
-                </li>
-                <li class="menu__item">
-                  <a href="./portfolio.html" class="menu__link">Portfolio</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./index.html" class="menu__link">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
+            <ul class="menu">
+              <li class="menu__item menu__item--active">
+                <a href="./index.html" class="menu__link menu__link--active"
+                  >Agencja</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link">Portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link">Kontakt</a>
+              </li>
+            </ul>
           </div>
 
           <div class="contact">
@@ -74,6 +72,11 @@
               </li>
             </ul>
           </div>
+          <button type="button" class="mobile-menu-button">
+            <svg class="mobile-menu-button__icon">
+              <use href="./images/icons.svg#mobile-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -81,13 +84,15 @@
     <main>
       <section class="banner">
         <div class="container container--banner">
-          <h1 class="banner__title">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
+          <div class="banner__content">
+            <h1 class="banner__title">
+              EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
+            </h1>
 
-          <button class="banner__button" type="button" data-modal-open>
-            Zamów usługę
-          </button>
+            <button class="banner__button" type="button" data-modal-open>
+              Zamów usługę
+            </button>
+          </div>
         </div>
       </section>
 

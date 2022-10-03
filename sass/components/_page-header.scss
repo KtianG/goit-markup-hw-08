@@ -7,6 +7,7 @@
 }
 
 .flex-container {
+  padding: 24px 15px 25px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,35 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-
-  &__item {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    &:not(:last-child) {
-      margin-right: 46px;
-    }
-  }
-}
-
-.menu__link {
-  text-decoration: none;
-  color: getColor("font-header");
-  font-weight: 500;
-  letter-spacing: 0.02em;
-
-  &:hover {
-    color: getColor("button-primary");
-  }
-
-  &:focus {
-    color: getColor("button-primary");
-  }
 }
 
 .menu__link--active {
@@ -63,24 +35,8 @@
   }
 }
 
-.contact {
-  text-decoration: none;
-  color: getColor("font-text");
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  justify-content: flex-end;
-}
-
-.contact-list {
-  display: flex;
-}
-
 .contact-list__item {
   display: flex;
-
-  &:not(:last-child) {
-    padding-right: 30px;
-  }
 }
 
 .contact-list__link {
@@ -114,5 +70,110 @@
   &--smartphone {
     width: 10px;
     height: 16px;
+  }
+}
+
+.mobile-menu-button {
+  width: 40px;
+  height: 40px;
+
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    fill: black;
+
+    &:active {
+      fill: getColor("button-primary");
+    }
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .menu {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .menu__link {
+    text-decoration: none;
+    color: getColor("font-header");
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    &:hover {
+      color: getColor("button-primary");
+    }
+
+    &:focus {
+      color: getColor("button-primary");
+    }
+  }
+
+  .contact {
+    text-decoration: none;
+    color: getColor("font-text");
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    justify-content: flex-end;
+    font-size: 12px;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .contact {
+      width: 138px;
+    }
+    .menu,
+    .page-header__right-side {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contact-list {
+    display: flex;
+  }
+
+  .menu {
+    width: 250px;
+    margin-left: 10px;
+  }
+
+  .contact {
+    font-size: 14px;
+  }
+
+  .contact-list__item {
+    &:not(:last-child) {
+      padding-right: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .menu {
+    width: 254px;
+    margin-left: 93px;
   }
 }
