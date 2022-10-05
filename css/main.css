@@ -935,8 +935,7 @@ h2 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 581px;
-  width: 528px;
+  width: calc(100% - 30px);
   border-radius: 4px;
   background-color: white;
 }
@@ -957,7 +956,7 @@ h2 {
   position: relative;
   display: block;
   margin-bottom: 10px;
-  width: 448px;
+  width: 100%;
 }
 
 .order-form__field-name {
@@ -1103,6 +1102,16 @@ h2 {
   left: 0;
 }
 
+@media (min-width: 481px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media (min-width: 769px) {
+  .modal {
+    width: 528px;
+  }
+}
 .portfolio {
   background-color: white;
 }
