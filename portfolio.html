@@ -32,12 +32,12 @@
 
             <ul class="menu">
               <li class="menu__item menu__item--active">
-                <a href="./index.html" class="menu__link">Agencja</a>
+                <a href="./index.html" class="menu__link menu__link--active"
+                  >Agencja</a
+                >
               </li>
               <li class="menu__item">
-                <a href="./portfolio.html" class="menu__link menu__link--active"
-                  >Portfolio</a
-                >
+                <a href="./portfolio.html" class="menu__link">Portfolio</a>
               </li>
               <li class="menu__item">
                 <a href="./index.html" class="menu__link">Kontakt</a>
@@ -73,8 +73,8 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="mobile-menu-button">
-            <svg class="mobile-menu-button__icon">
+          <button type="button" class="js-open-menu" openMenuBtn>
+            <svg class="js-open-menu__icon">
               <use href="./images/icons.svg#mobile-menu"></use>
             </svg>
           </button>
@@ -109,6 +109,7 @@
                 <img
                   class="thumb__image"
                   src="./images/portfolio001.jpg"
+                  srcset="./images/portfolio001x2.jpg 2x"
                   alt="Laptop with open website"
                   width="370"
                   height="294"
@@ -133,6 +134,7 @@
                 <img
                   class="thumb__image thumb__image--basketball"
                   src="./images/portfolio002.jpg"
+                  srcset="./images/portfolio002x2.jpg 2x"
                   alt="Two basketball players"
                   width="370"
                   height="294"
@@ -159,6 +161,7 @@
                 <img
                   class="thumb__image"
                   src="./images/portfolio003.jpg"
+                  srcset="./images/portfolio003x2.jpg 2x"
                   alt="Seafood Restaurant Logo"
                   width="370"
                   height="294"
@@ -183,6 +186,7 @@
                 <img
                   class="thumb__image"
                   src="./images/portfolio004.jpg"
+                  srcset="./images/portfolio004x2.jpg 2x"
                   alt="Headphones"
                   width="370"
                   height="294"
@@ -207,6 +211,7 @@
                 <img
                   class="thumb__image"
                   src="./images/portfolio005.jpg"
+                  srcset="./images/portfolio005x2.jpg 2x"
                   alt="Two boxes"
                   width="370"
                   height="294"
@@ -231,6 +236,7 @@
                 <img
                   class="thumb__image"
                   src="./images/portfolio006.jpg"
+                  srcset="./images/portfolio006x2.jpg 2x"
                   alt="Monitor"
                   width="370"
                   height="294"
@@ -255,6 +261,7 @@
                 <img
                   class="thumb__image"
                   src="./images/portfolio007.jpg"
+                  srcset="./images/portfolio007x2.jpg 2x"
                   alt="Book"
                   width="370"
                   height="294"
@@ -279,6 +286,7 @@
                 <img
                   class="thumb__image"
                   src="./images/portfolio008.jpg"
+                  srcset="./images/portfolio008x2.jpg 2x"
                   alt="Label"
                   width="370"
                   height="294"
@@ -303,6 +311,7 @@
                 <img
                   class="thumb__image"
                   src="./images/portfolio009.jpg"
+                  srcset="./images/portfolio009x2.jpg 2x"
                   alt="Laptop with hands on keyboard"
                   width="370"
                   height="294"
@@ -412,5 +421,56 @@
         </ul>
       </div>
     </footer>
+
+    <div class="js-menu-container">
+      <button type="button" class="js-close-menu">
+        <svg class="js-close-menu__icon">
+          <use href="./images/icons.svg#close" width="18px" height="18px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Agencja</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--active">
+          <a
+            href="./portfolio.html"
+            class="mobile-menu__link mobile-menu__link--active"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="js-menu-container__bottom">
+        <ul class="mobile-contact-list">
+          <li class="mobile-contact-list__item">
+            <a
+              href="tel:+48 111 111 111"
+              class="mobile-contact-list__link mobile-contact-list__link--phone"
+            >
+              <p>+48 111 111 111</p>
+            </a>
+          </li>
+          <li class="mobile-contact-list__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contact-list__link mobile-contact-list__link--mail"
+            >
+              <p>info@devstudio.com</p></a
+            >
+          </li>
+        </ul>
+        <div class="js-menu-container__social-media">
+          <a href="./index.html" class="js-menu-container__link">Instagram </a>|
+          <a href="./index.html" class="js-menu-container__link"> Twitter </a>|
+          <a href="./index.html" class="js-menu-container__link"> Facebook </a>|
+          <a href="./index.html" class="js-menu-container__link"> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -72,8 +72,8 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="mobile-menu-button">
-            <svg class="mobile-menu-button__icon">
+          <button type="button" class="js-open-menu" openMenuBtn>
+            <svg class="js-open-menu__icon">
               <use href="./images/icons.svg#mobile-menu"></use>
             </svg>
           </button>
@@ -213,6 +213,7 @@
               <img
                 class="team__photo"
                 src="./images/JohnDoe01.jpg"
+                srcset="./images/JohnDoe01.jpg 1x, ./images/JohnDoe01x2.jpg 2x"
                 alt="Jonh Doe"
                 width="270"
                 height="260"
@@ -259,6 +260,7 @@
               <img
                 class="team__photo"
                 src="./images/JohnDoe02.jpg"
+                srcset="./images/JohnDoe02.jpg 1x, ./images/JohnDoe02x2.jpg 2x"
                 alt="Jonh Doe"
                 width="270"
                 height="260"
@@ -305,6 +307,7 @@
               <img
                 class="team__photo"
                 src="./images/JohnDoe03.jpg"
+                srcset="./images/JohnDoe03.jpg 1x, ./images/JohnDoe03x2.jpg 2x"
                 alt="Jonh Doe"
                 width="270"
                 height="260"
@@ -350,6 +353,7 @@
               <img
                 class="team__photo"
                 src="./images/JohnDoe04.jpg"
+                srcset="./images/JohnDoe04.jpg 1x, ./images/JohnDoe04x2.jpg 2x"
                 alt="Jonh Doe"
                 width="270"
                 height="260"
@@ -613,6 +617,58 @@
         </form>
       </div>
     </div>
+
+    <div class="js-menu-container">
+      <button type="button" class="js-close-menu">
+        <svg class="js-close-menu__icon">
+          <use href="./images/icons.svg#close" width="18px" height="18px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item mobile-menu__item--active">
+          <a
+            href="./index.html"
+            class="mobile-menu__link mobile-menu__link--active"
+            >Agencja</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="js-menu-container__bottom">
+        <ul class="mobile-contact-list">
+          <li class="mobile-contact-list__item">
+            <a
+              href="tel:+48 111 111 111"
+              class="mobile-contact-list__link mobile-contact-list__link--phone"
+            >
+              <p>+48 111 111 111</p>
+            </a>
+          </li>
+          <li class="mobile-contact-list__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contact-list__link mobile-contact-list__link--mail"
+            >
+              <p>info@devstudio.com</p></a
+            >
+          </li>
+        </ul>
+        <div class="js-menu-container__social-media">
+          <a href="./index.html" class="js-menu-container__link">Instagram </a>|
+          <a href="./index.html" class="js-menu-container__link"> Twitter </a>|
+          <a href="./index.html" class="js-menu-container__link"> Facebook </a>|
+          <a href="./index.html" class="js-menu-container__link"> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
